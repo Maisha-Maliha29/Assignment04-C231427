@@ -1,20 +1,24 @@
 let display = document.getElementById("display");
-
-function fordisplay(value) {
+function appendtodisplay(value)
+{
     display.value += value;
 }
-
-function cleardisplay() {
+function cleardisplay()
+{
     display.value = "";
 }
-
-function result() {
-    try {
-        // Ensure expression is valid before evaluating
-        if (display.value.trim() === "") return;
-        
+function calculateresult()
+{
+    try 
+    {
+        if (display.value.trim() === "") 
+        {
+            return;
+        }  
         display.value = eval(display.value);
-    } catch (error) {
+    } 
+    catch (error) 
+    {
         display.value = "Error";
     }
 }
