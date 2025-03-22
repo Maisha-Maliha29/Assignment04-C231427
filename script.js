@@ -1,14 +1,14 @@
 let display = document.getElementById("display");
 
-function appendToDisplay(value) {
+function fordisplay(value) {
     display.value += value;
 }
 
-function clearDisplay() {
+function cleardisplay() {
     display.value = "";
 }
 
-function calculateResult() {
+function result() {
     try {
         // Ensure expression is valid before evaluating
         if (display.value.trim() === "") return;
